@@ -24,6 +24,22 @@ class Area():
 
     def colliderect(self, rect):
         return self.rect.colliderect(rect)
+    
+    def reset_pos(self, rx, ry):
+        self.rect.x = rx
+        self.rect.y = ry
+    
+    def reset_x(self, rx):
+        self.rect.x = rx
+
+    def reset_y(self, ry):
+        self.rect.y = ry
+
+    def move_x(self, mx):
+        self.rect.x += mx
+
+    def move_y(self, my):
+        self.rect.y += my
 
 class Picture(Area):
     def __init__(self, filename, x=0, y=0, width=10, height=10):

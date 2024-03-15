@@ -1,5 +1,4 @@
 import pygame
-from random import randint, shuffle
 from core import *
 from fb_game import *
 from ttt import *
